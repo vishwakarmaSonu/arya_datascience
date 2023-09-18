@@ -1,0 +1,37 @@
+myql -u root -p 
+# we don not have root so it will open directly
+MariaDB ==> databases
+#==================================
+
+we use the semicolon to terminate the query========
+show databases;
+
+here we create the databases ===========
+create database arya;
+
+to show databases=======
+show databases;
+we get the database name as we have mention=====
+
+we have to use the databases======
+use arya_datascience;
+
+create table========
+mysql> create table student(sid int(20),name varchar(100),age int(3));
+
+show tables========
+show tables;
+
+describe the tables=======
+mysql> desc student;
+
+
+insert data in table======
+mysql> insert into student values(1,'ram',21);
+
+to fetch the data=====
+mysql> select * from student;
+
+
+
+
