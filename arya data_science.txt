@@ -31,6 +31,34 @@ mysql> insert into student values(1,'ram',21);
 
 to fetch the data=====
 mysql> select * from student;
+*===>>  all columns
+
+
+maltiple value insert ======
+mysql> insert into student values(2,'sonu',21),(3, 'rahul',112),(4,'pranesh',1000),(5,"arya",123);
+
+
+to insert the data in the table by choosing the random columns==========*
+mysql> insert into student (sid, age) values(6,343);
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q1==> create a table person col names are pid, name , age, dose1, dose2=============>>> Q1
+
+step1.===>> mysql> create table person(pid int(10), name char(20) , age int(10), dose1 varchar(10), dose2 varchar(10));
+
+step2.==>> mysql> insert into person values(1, 'rahul', 21, 'yes','no'),(2,'arya',20,'n
+o','no'),(3,'sonu',22,'yes','yes');
+
+step3.==>> mysql> select * from person;
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#=============Where (Condition)
+
+logical operator ===> multiple conditions and combine 
+mysql> select * from person where age >21 and name='rahul';
+and ===>> all conditions  true
+or ==> any one conditions true
 
 
 
